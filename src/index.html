@@ -1,383 +1,803 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<title>Axit</title>
-</head>
-<body>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="../../../../favicon.ico">
+		<title>Автоматизированная штукатурка стен</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+	<main class="main">
+		<div class="container">
+			<div class="header">
+			
+			<div class="row">
+				<div class="col-md-3 col-sm-12">
+					<div class="logo">
+						<img src="img/logo.png" alt="Гипсолит. Штукатурка стен">
+					</div>
+				</div>
+
+				<div class="col-xl-2 offset-xl-4 col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-12">
+					<div class="phone-block">
+						<a class="phone-link" href="#">+7 495 771 05 08</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-12">
+					<div class="wrap">
+						<div class="wrap-block">
+							<button class="button header-btn popup-btn">
+						получить консультацию
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<div class="main-content">
+				<div class="row">
+					<div class="col-lg-6 col-sm-12">
+						<div class="main-title">
+							<h1>Автоматизированная штукатурка стен</h1>
+							<p class="main-subtitle">Идеально ровные стены <br>в кратчайшие сроки</p>
+							<span>
+								Стоимость работ <br> 
+								 от <strong>300</strong> руб/м<sup>2</sup>
+							</span>
+							<strong class="main-trigger">
+								Оплата по факту!
+							</strong>
+						</div>
+					</div>
+
+					<div class="col-xl-4 offset-xl-2 col-lg-4 offset-lg-2 col-md-6 offset-md-3 col-sm-10 offset-sm-1">
+						<div class="main-form">
+							<h2 class="main-form-header">Для расчёта точной стоимости закажите <strong>выезд замерщика</strong></h2>
+							<form class="form" action="#">
+								<label for="#">Ваше имя</label>
+								<input class="form-input" required type="text">
+								<label for="#">Номер телефона</label>
+								<input class="form-input" required id="phone" type="text">
+								<button class="form-btn button" type="submit">Оставьте заявку</button>
+								<small>Приедем в день обращения*</small>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="features">
+		<div class="container">
+			<h2 class="section-header">Преимущества работы с нами</h2>
+			<div class="features-slider">
+				<div class="features-block">
+					<div class="features-img">
+						<picture>
+							<source srcset="img/features/coin.svg" type="image/">
+							<img src="img/features/coin.png" alt="Платите по факту">
+						</picture>
+					</div>
+					<h3>Платите по факту</h3>
+					<p>Вы оплачиваете выполненные <br>работы только после их выполнения. <br>Никаких скрытых доплат и промежуточных платежей.</p>
+				</div>
+				<div class="features-block">
+					<div class="features-img">
+						<picture>
+							<source srcset="img/features/folder.svg" type="image/">
+							<img src="img/features/folder.png" alt="Заключаем договор">
+						</picture>
+					</div>
+					<h3>Заключаем договор</h3>
+					<p>Перед началом работ заключаем договор на юридическое лицо. <br>Вы можете быть уверены, что все обязательства будут выполнены.</p>
+				</div>
+				<div class="features-block">
+					<div class="features-img">
+						<picture>
+							<source srcset="img/features/clock.svg" type="image/">
+							<img src="img/features/clock.png" alt="Точно в срок">
+						</picture>
+					</div>
+					<h3>Точно в срок</h3>
+					<p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, <br>Вы платите меньше</p>
+				</div>
+				<div class="features-block">
+					<div class="features-img">
+						<picture>
+							<source srcset="img/features/piggy-bank.svg" type="image/">
+							<img src="img/features/piggy-bank.png" alt="Экономите на материалах">
+						</picture>
+					</div>
+					<h3>Экономите на материалах</h3>
+					<p>Мы являемся структурным подразделением компании поставщика строительных смесей gicema.ru  и даём Вам самые выгодные цены.</p>
+				</div>
+			</div>
+		</div>	
+	</section>
 	
-	<!-- Header -->
-	<header class="header">
+	<section class="price">
 		<div class="container">
-			<div class="header__inner">
-				<div class="header__logo">
-					<img src="images/Logo.png" alt="">
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<div class="section-header section-header_light">
+						<h2>Цены</h2>
+						<p>Выберите вариант, который подходит Вам:</p>
+					</div>
 				</div>
-				<nav class="nav">
-					<a href="#" class="nav__link">Features</a>
-					<a href="#" class="nav__link">About</a>
-					<a href="#" class="nav__link">Pricing</a>
-					<a href="#" class="nav__link">Reviews</a>
-					<a href="#" class="nav__link">Contact</a>
-				</nav>
-		<button class="burger" type="button">
-			<span class="burger__item">Menu</span>
-		</button>
+				<div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+					<div class="price-button">
+					<button class="button price-header-btn" data-toggle="modal">Рассчитать точную стоимость</button>
+					</div>
+				</div>	
 			</div>
-		</div>
-	</header>
-
-	<!-- Intro -->
-	<div class="intro">
-		<div class="container">
-			<div class="intro__inner">
-				<div class="intro__logo">
-					<img src="images/Logo2.png" alt="">
-				</div>
-				<div class="intro__title">MODERN AXURE TEMPLATE <br>FOR BEAUTIFUL PROTOTYPES</div>
-				<div class="intro__suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>
-				euismod bibendum laoreet. Proin gravida dolor sit amet lacus <br>	 accumsan et viverra justo commodo.</div>
-				<a href="#" class="intro__btn">Download</a>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- Social -->
-	<div class="social">
-		<div class="container">
-			<div class="social__item">
-				<div class="social__texts">
-					<div class="social__title">Social Media</div>
-					<div class="social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aenean euismod bibendum laoreet.</div>
+		
+			<div class="row">
+				<div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+					<div class="price-block">
+						<h4>Штукатурка вашим материалом</h4>
+						<img src="img/prices/1.jpg" alt="Штукатурка вашим материалом">
+						<span class="price-tag">от 300 руб/м<sup>2<sup></span>
+						<ul class="price-list">
+							<li>Проведение работ</li>
+							<li>Уборка</li>
+							
+						</ul>
+						<button class="button">Заказать</button>
+					</div>
 				</div>
 
-			<div class="social__media">
-				<a href="#" target="_blank">
-					<i class="fab fa-facebook-f"></i>
-				</a>
-				<a href="#" target="_blank">
-					<i class="fab fa-twitter"></i>
-				</a>
-				<a href="#" target="_blank">
-					<i class="fab fa-google-plus-g"></i>
-				</a>
-				<a href="#" target="_blank">
-					<i class="fab fa-pinterest"></i>
-				</a>
-				<a href="#" target="_blank">
-					<i class="fab fa-instagram"></i>
-				</a>
-				<a href="#" target="_blank">
-					<i class="fas fa-wifi"></i>
-				</a>
+				<div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+					<div class="price-block">
+						<h4>Штукатурка под шпаклёвку</h4>
+						<img src="img/prices/2.jpg" alt="">
+						<span class="price-tag">от 530 руб/м<sup>2<sup></span>
+						<ul class="price-list">
+							<li>Завоз материала и его подъём</li>
+							<li>Проведение работ</li>
+							<li>Уборка</li>
+							<li>Гарантия 2 года</li>
+							
+						</ul>
+						<button class="button">Заказать</button>
+					</div>
+				</div>
+				<div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+					<div class="price-block">
+						<h4>Штукатурка под обои</h4>
+						<img src="img/prices/3.jpg" alt="">
+						<span class="price-tag">от 560 руб/м<sup>2<sup></span>
+						<ul class="price-list">
+							<li>Завоз материала и его подъём</li>
+							<li>Проведение работ</li>
+							<li>Уборка</li>
+							<li>Гарантия 2 года</li>
+							<li>Можно сразу клеить обои</li>
+						</ul>
+						<button class="button">Заказать</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<!-- Tabs -->
-	<div class="tabs">
+	<section class="feedback">
 		<div class="container">
-			<div class="tabs__item">
-				<div class="tab">
-					<div class="tab__1">Tab 1</div>
-					<div class="tab__2">Tab 2 </div>
-					<div class="tab__3">Tab 3</div>
+			<div class="section-header">
+				<h2>Отзывы</h2>
+			</div>
+		
+			<div class="feedback-slider">
+				<div class="feedback-slider_item">
+					<div class="row">
+						<div class="col-lg-6 col-md-12">
+							<div class="fotorama" data-width="100%" data-nav="thumbs">
+								<img src="img/feedback/photo/1.jpg" alt="">
+								<img src="img/feedback/photo/2.jpg" alt="">
+								<img src="img/feedback/photo/3.jpg" alt="">
+								<img src="img/feedback/photo/4.jpg" alt="">
+								<img src="img/feedback/photo/5.jpg" alt="">
+								<img src="img/feedback/photo/6.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12">
+							<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+							<p>Площадь: <strong>357 м2</strong></p>
+							<p>Выполнен за: <strong>10 дней</strong></p>
+							<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+							<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+
+							<div class="media">
+							  <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+							  <div class="media-body">
+							  	<span>Заказчик</span>
+							    <h4 class="mt-0">Нахимов Артём</h4>
+							  </div>
+							</div>
+							
+							<div class="feedback-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. О предупредила океана она однажды.</div>
+
+						</div>
+					</div>
 				</div>
-				<div class="texts">
-					<div class="tabs__title">Tabs with soft transitioning effect.</div>
-					<div class="tabs__suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br> justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque <br>penatibus et magnis dis parturient montes <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br> bibendum laoreet.
+				<div class="feedback-slider_item">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="fotorama" data-width="100%" data-nav="thumbs">
+								<img src="img/feedback/photo/1.jpg" alt="">
+								<img src="img/feedback/photo/2.jpg" alt="">
+								<img src="img/feedback/photo/3.jpg" alt="">
+								<img src="img/feedback/photo/4.jpg" alt="">
+								<img src="img/feedback/photo/5.jpg" alt="">
+								<img src="img/feedback/photo/6.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-md-6">
+					<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+					<p>Площадь: <strong>357 м2</strong></p>
+					<p>Выполнен за: <strong>10 дней</strong></p>
+					<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+					<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+						<div class="media">
+						  <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+						  <div class="media-body">
+						  	<span>Заказчик</span>
+						   <h4 class="mt-0">Нахимов Артём</h4>
+						  </div>
+						</div>
+						<div class="feedback-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. О предупредила океана она однажды.</div>
+						</div>
+					</div>
+				</div>
+				<div class="feedback-slider_item">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="fotorama" data-width="100%" data-nav="thumbs">
+								<img src="img/feedback/photo/1.jpg" alt="">
+								<img src="img/feedback/photo/2.jpg" alt="">
+								<img src="img/feedback/photo/3.jpg" alt="">
+								<img src="img/feedback/photo/4.jpg" alt="">
+								<img src="img/feedback/photo/5.jpg" alt="">
+								<img src="img/feedback/photo/6.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+							<p>Площадь: <strong>357 м2</strong></p>
+							<p>Выполнен за: <strong>10 дней</strong></p>
+							<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+							<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+							
+							<div class="media">
+							  <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+							  <div class="media-body">
+							  	<span>Заказчик</span>
+							    <h4 class="mt-0">Нахимов Артём</h4>
+							  </div>
+							</div>
+							<div class="feedback-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. О предупредила океана она однажды.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<div class="feedback-form">
+						<h3>Хотите так же? Оставьте Ваши контактные данные</h3>
+						<form class="form" action="#">
+							<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<label for="#">Ваше имя</label>
+									<input class="form-input" required type="text">
+								</div>
+
+								<div class="col-lg-6 col-md-12">
+									<label for="#">Номер телефона</label>
+									<input class="form-input" required type="text">
+								</div>
+							</div>
+							<button class="form-btn feedback-btn button" type="submit">Оставьте заявку</button>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+   </div>
+			<img class="hand" src="img/feedback/hand.png" alt="hand">
+	</section>
+		
+	<section class="scheme">
+		<div class="container">
+			<div class="section-header">
+				<h2>Схема работы</h2>
+				<p>Работа над вашим объектом будет включать в себя следующие этапы:</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 offset-md-1 col-sm-8 offset-sm-2">
+					<div class="scheme-block">
+						<img src="img/scheme/1.png" alt="Заявка">
+						<h3>Заявка</h3>
+						<p>Оставляете онлайн заявку или звоните +7 495 771 05 08</p>
+					</div>
+				</div>
+				<div class="col-lg-3 offset-lg-1 col-md-4 offset-md-1 col-sm-8 offset-sm-2">
+					<div class="scheme-block">
+						<img src="img/scheme/2.png" alt="Выезд специалиста">
+						<h3>Выезд специалиста</h3>
+						<p>В течение 1 рабочего дня к Вам приезжает специалист, который выполнит замеры для точной стоимости работ</p>
+					</div>
+				</div>
+				<div class="col-lg-3 offset-lg-1 col-md-4 offset-md-1 col-sm-8 offset-sm-2">
+					<div class="scheme-block">
+						<img src="img/scheme/3.png" alt="Составление договора">
+						<h3>Составление договора</h3>
+						<p>Готовим договор и согласовываем с Вами</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 offset-md-1 col-sm-8 offset-sm-2">
+					<div class="scheme-block">
+						<img src="img/scheme/4.png" alt="Начало работ">
+						<h3>Начало работ</h3>
+						<p>Доставляем материалы, оборудование, подписываем договор и начинаем работы</p>
+					</div>
+				</div>
+				<div class="col-lg-3 offset-lg-1 col-md-4 offset-md-1 col-sm-8 offset-sm-2">
+					<div class="scheme-block">
+						<img src="img/scheme/5.png" alt="Завершение работ">
+						<h3>Завершение работ</h3>
+						<p>После окончания работ Вы проверяете качество и подписываете акт сдачи, производите оплату.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="all-inclusive">
+		<div class="container">
+			<div class="section-header">
+				<h2>Все на 100% включено!</h2>
+				<p>При выполнении работ с нашим материалом в стоимость входит:</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">
+									1.
+								</span>
+							</span>
+						</div>
+					  <div class="media-body">
+					    <h4>Материал:</h4>
+					    <p>штукатурка, грунтовка или бетоноконтакт, маяки, сетка на стыки</p>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">
+									2.
+								</span>
+							</span>
+						</div>
+					  <div class="media-body">
+					    <h4>Доставка оборудования и материала на объект</h4>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">
+									3.
+								</span>
+							</span>
+						</div>
+					  <div class="media-body">
+					    <h4>Подготовка поверхности</h4>
+					    <p>(очистка, грунтование)</p>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">
+									4.
+								</span>
+							</span>
+						</div>
+					  <div class="media-body">
+					    <h4>Установка маяков</h4>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">
+									5.
+								</span>
+							</span>
+						</div>
+					  <div class="media-body">
+					    <h4>Оштукатуривание поверхности</h4>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">
+									6.
+								</span>
+							</span>
+						</div>
+					  <div class="media-body">
+					    <h4>Удаление маяков</h4>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">
+									7.
+								</span>
+							</span>
+						</div>
+					  <div class="media-body">
+					    <h4>Глянцевание</h4>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">
+									8.
+								</span>
+							</span>
+						</div>
+					  <div class="media-body">
+					    <h4>Уборка и вывоз мусора</h4>
+					  </div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="problems">
+		<div class="container">
+			<div class="section-header">
+				<h2>Мы развеем все опасения</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="problems-list problems-list_bad">
+						<h4>Какие могут быть проблемы:</h4>
+						<ul>
+							<li>Стены и углы будут неровными</li>
+							<li>Ремонт затянется на долгие месяц</li>
+							<li>Сложности с доставкой и разгрузкой материалов</li>
+							<li>Останется мусор и пыль после работ</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-5 offset-lg-2">
+					<div class="problems-list problems-list_good">
+						<h4>Наше решение:</h4>
+						<ul>
+							<li>Высокая квалификация специалистов + минимум 5 летний опыт работы = идеально ровные поверхности</li>
+							<li>Соблюдаем сроки, которые прописаны в договоре. На квартиру площадью 135 м2 уходит от 3 до 5 дней</li>
+							<li>Доставка материала и подъём бесплатно</li>
+							<li>Убираем и вывозим мусор после работ</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="img/problems/problems-man.png" alt="" class="problems-man">
+	</section>
+
+	<section class="materials">
+		<div class="container">
+			<div class="section-header">
+				<h2>Материалы</h2>
+				<p>Мы работаем только качественными, проверенными временем материалами, следующих производителей:</p>
+			</div>
+
+			<div class="features-slider materials-slider">
+				<div class="features-block">
+					<div class="materials-img">
+						<picture>
+							<img src="img/materials/knauf.png" alt="knauf">
+						</picture>
+					</div>
+					<h3>Knauf</h3>
+					<p>МП-75 <strong>245</strong> руб/меш</p>
+					<a class="materials-link" href="#">Сертификат</a>
+				</div>
+
+				<div class="features-block">
+					<div class="materials-img">
+						<picture>
+							<img src="img/materials/volma.png" alt="volma">
+						</picture>
+					</div>
+					<h3>Volma</h3>
+					<p>Аква слой <strong>245</strong> руб/меш <br>Гипс актив <strong>245</strong> руб/меш</p>
+					<a class="materials-link" href="#">Сертификат</a>
+				</div>
+
+				<div class="features-block">
+					<div class="materials-img">
+						<picture>
+							<img src="img/materials/forman.png" alt="forman">
+						</picture>
+					</div>
+					<h3>Forman</h3>
+					<p>Аква слой <strong>245</strong> руб/меш <br>Гипс актив <strong>245</strong> руб/меш</p>
+					<a class="materials-link" href="#">Сертификат</a>
+				</div>
+				
+				<div class="features-block">
+					<div class="materials-img">
+						<picture>
+							<img src="img/materials/ceresit.png" alt="ceresit">
+						</picture>
+					</div>
+					<h3>Ceresit</h3>
+					<p>Аква слой <strong>245</strong> руб/меш <br>Гипс актив <strong>245</strong> руб/меш</p>
+					<a class="materials-link" href="#">Сертификат</a>
+				</div>
+			</div>
+			<p class="materials-offer">Вы можете приобрести материалы по оптовым ценам на сайте <a class="materials-link" href="#">gicema.ru</a> или по телефону <strong>+7 495 790 69 90</strong></p>
+		</div>
+	</section>
+
+	<section class="tour">
+		<div class="container">
+			<div class="main-content">
+				<div class="row">
+					<div class="col-lg-5 col-sm-12">
+						<div class="main-title tour-title">
+							<h1>Посмотрите <br>как мы работаем</h1>
+							<p class="main-subtitle tour-suptitle">Хотите удостовериться в профессионализме наших сотрудников?</p>
+							<p class="main-subtitle tour-suptitle">Вы можете сделать это, приехав на один из наших объектов, и понаблюдав за ходом работ. Увидите оборудование, материалы и качество исполнения.</p>
+						</div>
+					</div>
+
+					<div class="col-xl-4 offset-xl-3 col-lg-4 offset-lg-2 col-md-6 offset-md-3 col-sm-10 offset-sm-1">
+						<div class="main-form">
+							<h2 class="main-form-header">Для расчёта точной стоимости закажите <strong>выезд замерщика</strong></h2>
+							<form class="form" action="#">
+								<label for="#">Ваше имя</label>
+								<input class="form-input" required type="text">
+								<label for="#">Номер телефона</label>
+								<input class="form-input" required type="text">
+								<button class="form-btn button tour-btn" type="submit">записаться на просмотр</button>
+								<small>Приедем в день обращения*</small>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="upsell">
+		<div class="container">
+			<div class="section-header section-header_light">
+				<h2>Дополнительные услуги</h2>
+				<p>Помимо штукатурных рыбот Вы можете заказать у нас следующие услуги</p>
+			</div>
+
+		<div class="upsell-blocks">	
+			<div class="row">
+				<div class="col-lg-4">
+						<div class="upsell-block">
+							<img src="img/upsell/1.jpg" alt="Монтаж электропроводки">
+								<p>Монтаж электропроводки</p>
+						<button class="button">Цены</button>
+						</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="upsell-block">
+						<img src="img/upsell/2.jpg" alt="Стяжка пола">
+							 <p>Стяжка пола</p>
+					<button class="button">Цены</button>
+				</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="upsell-block">
+					<img src="img/upsell/3.jpg" alt="Сантехнические работы">
+					  <p>Сантехнические работы</p>
+					<button class="button">Цены</button>
+					</div>
+				</div>
+			</div>			
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2 class="contacts-title">Контакты</h2>
+					<p>Адрес офиса: <br> Москва, копейское шоссе, 12, офис 34</p>	
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2281.4633679101066!2d61.50587941607078!3d55.12266684788025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5f31d5482c817%3A0xec83044de395ba73!2z0JrQvtC_0LXQudGB0LrQvtC1INGILiwgMTIsINCn0LXQu9GP0LHQuNC90YHQuiwg0KfQtdC70Y_QsdC40L3RgdC60LDRjyDQvtCx0LsuLCA0NTQwMTI!5e0!3m2!1sru!2sru!4v1599135533178!5m2!1sru!2sru" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+					<p>Номер телефона: <br> <strong>+7 495 771 05 08</strong></p>
+					<p>E-mail: <br> <a class="contacts-link" href="mailto:order@gipsolit.ru">order@gipsolit.ru</a></p>
+					<p>Реквизиты: <br> ИНН 35453453  ОГРН 34234234</p>
+				</div>
+				
+				<div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-6 offset-md-3">
+						<div class="main-form contacts-form">
+							<h2 class="contacts-form-header">Оставьте контактные данные для связи</h2>
+							<form class="form" action="#">
+								<label for="#">Ваше имя</label>
+								<input class="form-input" required type="text">
+								<label for="#">Номер телефона</label>
+								<input class="form-input" required type="text">
+								<label for="#">Email</label>
+								<input class="form-input" required type="text">
+								<label for="#">Сообщение</label>
+								<textarea class="form-textarea" required rows="5"></textarea>
+								<button class="form-btn button" type="submit">Оставьте заявку</button>
+							</form>
+						</div>
+				</div>										
+			</div>
+		</div>																
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="logo">
+						<img src="img/logo.png" alt="Гипсолит. Штукатурка стен">
+					</div>
+				</div>
+				<div class="footer-contacts">
+					<div class="col-xl-4 offset-xl-2 col-lg-4 offset-lg-2 col-md-8 offset-md-4">
+						<p><strong>+7 495 771 05 08</strong></p>
+						<p><a class="contacts-link" href="mailto:order@gipsolit.ru">order@gipsolit.ru</a></p>
+						<p class="contacts-link">Пн-Пт: с 9:00 до 18:00</p>
+					</div>
+				</div>
+				<div class="footer-dev-logo">
+					<div class="col-lg-4 offset-lg-2">
+						<p>Разработка сайта:</p>
+						<img src="img/dev-logo.png" alt="Веб-кенгуру">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<!-- Модальные окна -->
+		<!-- Получить консультацию -->
+		<div class="popup">
+			<div class="popup-dialog">
+				<div class="popup-content">
+					<button class="popup-close">&times</button>
+					<h4 class="popup-header">
+						Заинтересовало?
+					</h4>
+					<p>
+ 					Оставьте контактные данные <br>для связи
 					</p>
-					</div>
-					<a href="#" class="tabs__btn">Download</a> 
-
-				</div>
-				<img class="tabs__photo" src="images/tabs/image_right.png" alt="">
-			</div>
-		</div>
-	</div>
-
-	<!-- Sub -->
-	<div class="sub">
-		<div class="container">
-			<div class="sub__item">
-				<img class="sub__img" src="images/sub/1.png" alt="">
-				<div class="subs">
-					<div class="sub__title">Sub list section</div>
-					<div class="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean <br>
-					euismod bibendum laoreet. Proin gravida dolor sit amet lacus <br>
-					accumsan et viverra justo commodo.</div>
-				</div>
-				<div class="titles">
-					<div class="logos">
-						<div class="logo__around"></div>
-						<img class="titles__logo"src="images/sub/logo.png" alt="">
-					</div>
-					<div class="sub__suptitle">Title</div>
-					<div class="sub__texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> 
-					Aenean euismod bibendum laoreet.</div>
-				</div>
-
-				<div class="titles2">
-					<div class="logos">
-						<div class="logos__around"></div>
-						<img class="titles__logo"src="images/sub/logo.png" alt="">
-					</div>
-					<div class="sub__suptitle">Title</div>
-					<div class="sub__texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aenean euismod bibendum laoreet. Proin gravida dolor <br>	sit amet lacus accumsan et viverra justo commodo.</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<!-- Standart-->
-<div class="standart">
-		<div class="container">
-			<div class="standart__item">
-				<img class="standart__img" src="images/standart/1.png" alt="">
-				<div class="standart">
-					<div class="standart__title">Standard Picture Section</div>
-					<div class="standart__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean <br>
-euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan <br>
-et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis <br>
-natoque penatibus et magnis dis parturient montes. <br>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br> 
-bibendum laoreet.</p>
+					<div class="form popup-form">
+						<form class="form" action="#">
+								<label for="#">Ваше имя</label>
+								<input class="form-input" required type="text">
+								<label for="#">Номер телефона</label>
+								<input class="form-input" required type="text">
+								<label for="#">Сообщение</label>
+								<textarea class="form-input" required rows="5"></textarea>
+								<button class="form-btn button" type="submit">Оставьте заявку</button>
+							</form>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Why-->
-	<div class="why">
-		<div class="container">
-			<div class="why__item">
-				<div class="why__title">WHY THIS IS AWESOME</div>
-				<div class="why__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-		<div class="logos">
-			<div class="logo__item">
-				<div class="why__logo">
-					<img class="bulb" src="images/why/bulb.png" alt="">
-					<img class="around"src="images/why/icon_awesome_u175.png" alt="">
 
-				</div>
-				<div class="why__suptitle">Thoughtful Design</div>
-				<div class="logo__text">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-elit. Aenean euismod bibendum laoreet. Proin gravida <br>	
- dolor sit amet lacus accumsan et viverra.</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Подключаем стили slick slider -->
+		<link rel="stylesheet" href="slick/slick.css">
+		<link rel="stylesheet" href="slick/slick-theme.css">
+		<!-- Подключаем саму бибилиотеку slick slider -->
+		<script src="slick/slick.min.js"></script>
+		
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script>
+			jQuery(function($){
+			    $("#phone").mask("+7 (999) 999-99-99");
+			});
+		</script>
+		
+
+		<!-- Иницилизируем slider -->
+		<script>
+			$(document).ready(function(){
+				$('.popup-btn').on('click', function(event) {
+					event.preventDefault();
+					$('.popup').show();
+						
+				});		
+				$('.popup-close').on('click', function(event) {
+					event.preventDefault();
+					$('.popup').hide() 
+				});	
+					
+					$('.feedback-slider').slick({
+						prevArrow: '<button type="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/feedback/prevArrow.svg" alt="" ></button>',
+						nextArrow: '<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="img/feedback/nextArrow.svg" alt="" ></button>'
+					});
 				
-			</div>
+				 $('.features-slider').slick({
+				 	infinite: true,
+  				slidesToShow: 4,
+  				slidesToScroll: 1,
 
-			<div class="logo__item">
-				<div class="why__logo">
-					<img class="claviatura" src="images/why/claviatura.png" alt="">
-					<img class="around"src="images/why/icon_awesome_u175.png" alt="">
-
-				</div>
-				<div class="whyclav__suptitle">Well Crafted</div>
-				<div class="logo__text">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-elit. Aenean euismod bibendum laoreet. Proin gravida <br>	
- dolor sit amet lacus accumsan et viverra.</div>
-				
-
-			</div>
-
-			<div class="logo__item">
-				<div class="why__logo">
-					<img class="storm"src="images/why/storm.png" alt="">
-					<img class="around"src="images/why/icon_awesome_u175.png" alt="">
-
-				</div>
-				<div class="whystorm__suptitle">Easy to Customize</div>
-				<div class="logo__text">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-elit. Aenean euismod bibendum laoreet. Proin gravida <br>	
- dolor sit amet lacus accumsan et viverra.</div>
-				
-			</div>
-			</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Price -->
-	<div class="price">
-		<div class="container">
-			<div class="price__item">
-				<div class="price__title">PRICING OPTIONS</div>
-				<div class="price__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-			<div class="blocks">
-				<div class="block__suptitle">Basic</div>
-				<div class="block__price">0</div>
-				<div class="dollar__1">$</div>
-
-				<div class="block__text">Free for Life</div>
-				<div class="block__line"></div>
-				<div class="block__popular">OUR MOST POPULAR</div>
-				<div class="options">
-					<div class="options__text">1 gb of space</div>
-					<div class="options__text">10 gb of bandwidth</div>
-					<div class="options__text">3 websites</div>
-					<div class="options__text">Basic Customization</div>
-					<div class="options__text">wordpress integration</div>
-					<div class="options__text">email support</div>
-				</div>
-
-
-			</div>
-
-			<div class="blocks">
-				<div class="block__suptitle">Professional</div>
-				<div class="block__price">19</div>
-				<div class="dollar__2">$</div>
-
-				<div class="block__text">Monthly Payment</div>
-				<div class="block__line"></div>
-				<div class="block__popular">OUR MOST POPULAR</div>
-				<div class="options">
-					<div class="options__text">5 gb of space</div>
-					<div class="options__text">50 gb of bandwidth</div>
-					<div class="options__text">12 websites</div>
-					<div class="options__text">Advanced Customization</div>
-					<div class="options__text">wordpress integration</div>
-					<div class="options__text">email support</div>
-				</div>
-			</div>
-
-			<div class="blocks">
-				<div class="block__suptitle">Enterprise</div>
-				<div class="block__price">70</div>
-				<div class="dollar__3">$</div>
-
-				<div class="block__text">Monthly Payment</div>
-				<div class="block__line"></div>
-				<div class="block__popular">OUR MOST POPULAR</div>
-				<div class="options">
-					<div class="options__text">unlimited space</div>
-					<div class="options__text">unlimited bandwidth</div>
-					<div class="options__text">100 websites</div>
-					<div class="options__text">Advanced Customization</div>
-					<div class="options__text">wordpress integration</div>
-					<div class="options__text">24/7 customer support</div>
-				</div>
-			</div>
-
-
-			</div>
-		</div>
-	</div>
-
-<!-- Reviews -->
-<div class="reviews">
-	<div class="container">
-		<div class="reviews__item">
-			<div class="reviews__title">WHAT OUR CUSTOMERS ARE SAYING</div>
-			<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-
-			<div class="reviews__block">
-				<img class="reviews__cloud" src="images/reviews/reviews__cloud.png" alt="">
-				<div class="cloud__text">Lorem ipsum dolor sit amet, <br>
-consectetur adipisicing elit. Doloribus <br>
-accusamus expedita repellat similique <br>
-odio aspernatur ex, architecto eaque <br>
-quo suscipit.</div>
-				<img class="reviews__avatar" src="images/reviews/avatar.png" alt="">
-
-				<div class="avatar">
-				<div class="avatar__name">Jeremy H.</div>
-				<div class="avatar__prof">Manager</div>
-				</div>
-			</div>	
-
-			<div class="reviews__block">
-				<img class="reviews__cloud" src="images/reviews/reviews__cloud.png" alt="">
-				<div class="cloud__text">Lorem ipsum dolor sit amet, <br>
-consectetur adipisicing elit. Doloribus <br>
-accusamus expedita repellat similique <br>
-odio aspernatur ex, architecto eaque <br>
-quo suscipit.</div>
-				<img class="reviews__avatar" src="images/reviews/avatar.png" alt="">
-				
-				<div class="avatar">
-				<div class="avatar__name">John S.</div>
-				<div class="avatar__prof">Freelancer</div>
-				</div>
-			</div>	
-
-			<div class="reviews__block">
-				<img class="reviews__cloud" src="images/reviews/reviews__cloud.png" alt="">
-				<div class="cloud__text">Lorem ipsum dolor sit amet, <br>
-consectetur adipisicing elit. Doloribus <br>
-accusamus expedita repellat similique <br>
-odio aspernatur ex, architecto eaque <br>
-quo suscipit.</div>
-				<img class="reviews__avatar" src="images/reviews/avatar.png" alt="">
-				
-				<div class="avatar">
-				<div class="avatar__name">Susan W.</div>
-				<div class="avatar__prof">Photographer</div>
-				</div>
-			</div>	
-		</div>
-	</div>
-</div>
-
-<!-- Axure -->
-<div class="axure">
-	<div class="container">
-		<div class="axure__item">
-			<div class="axure__title">STYLISH AXURE DESIGN</div>
-			<div class="axure__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</div>
-			<div class="axure__btn">Download</div>
-		</div>
-	</div>
-</div>
-
-<!-- Contact -->
-<div class="contact">
-	<div class="container">
-		<div class="contact__item">
-			<div class="contact__title">CONTACT US</div>
-			<div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-
-			<div class="column">
-					<div class="contact__message">
-		        <form class="form" action="#">
-		        	<input class="column-input" required type="text" placeholder="Name">
-		        	<input class="column-input" required type="text" placeholder="Email">
-		        	<input class="column-input" required type="text" placeholder="Subject">
-		        </form>
-        			</div>
-			<div class="contact__message2">
-	        <textarea class="column-input" rows="5" placeholder="Message"></textarea>
-			</div>
-			</div>
-
-			<div class="contact__btn">Send Message</div>
-		</div>
-	</div>
-</div>
-
-<!-- Footer -->
-
-<div class="footer">
-	<div class="container">
-		<div class="footer__icons">
-			<i class="fab fa-facebook-f"></i>
-			<i class="fab fa-twitter"></i>
-			<i class="fab fa-google-plus-g"></i>
-			<i class="fab fa-pinterest"></i>
-			<i class="fas fa-camera-retro"></i>
-			<i class="fas fa-rss"></i>
-		</div>
-
-		<div class="footer__text">© 2015 Axure Themes</div>
-	</div>
-</div>
-</body>
+  				responsive: [
+    
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+         prevArrow:'<button class="prev arrow"></button>',
+         nextArrow:'<button class="next arrow"></button>',
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow:'<button class="prev arrow"></button>',
+        nextArrow:'<button class="next arrow"></button>'
+      }
+    }
+  ]
+				 });
+			});
+		</script>
+	</body>
 </html>

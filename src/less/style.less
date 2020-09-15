@@ -78,13 +78,14 @@ button:active, button:focus {
 }
 	/* Оформление форм */
 .form {
-	&-input {
+	&-input, &-textarea {
 		display: block;
 		border: 1px solid @border-input;
 		margin: 2rem 0;
 		width: 100%;
 		padding: 1.5rem;
 		border-radius: 5px;
+		font-size: 1.7rem;
 	}
 	/* Подписи к полям */
 	label {
@@ -572,6 +573,9 @@ section {
 	&-suptitle {
 		font-size: 2.2rem;
 	}
+	&-btn {
+		padding: 1.5rem 1.5rem;
+	}
 }
 
 /* Дополнительные услуги */
@@ -598,6 +602,62 @@ section {
 			padding: 1.5rem 5rem;
 			font-size: 1.6rem;	
 			.bold();						
+		}
+	}
+}
+
+
+/* Контакты */
+.contacts {
+	background: @light url(../img/contacts-bg.jpg) center no-repeat;
+	background-size: cover;			
+	 &-title {
+		font-size: 3.6rem;
+		.bold();
+	}
+	p {
+		font-size: 1.7rem;
+		margin-bottom: 2rem;
+		margin-top: 2rem;				
+	}
+	&-link {
+		display: inline-block;
+		color:@text;
+		border-bottom: 1px dotted @text;
+		&:hover {
+			color: darken(@text, 10%);
+		}	
+	}
+	&-form {
+		h2 {
+			font-size: 1.9rem;
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+/* Оформление подвала */
+footer {
+	padding: 4rem 0;
+}
+.footer {
+	&-contacts {
+
+		text-align: center;
+		padding-top: 0.5rem;
+	p {
+		width: 17rem;
+		margin: 0;
+		font-size: 1.7rem;
+	}
+	}
+	&-dev-logo {
+		position: absolute;
+		right: 25%;
+		text-align: right;
+		p {
+			width: 14rem;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -661,9 +721,20 @@ section {
 		margin-left: -13rem;
 	}
 }
-.materials {
+	.materials {
 	margin-top: 9rem;	
-}
+	}
+	.tour {
+		&-btn {
+			padding: 0.5rem;
+		}	
+	}
+	.footer {
+		&-dev-logo {
+			position: absolute;
+			right: 15%;
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -732,11 +803,40 @@ section {
 		}
 	.tour {
 		background: none;
-		background-color: @bg-light;	
+		background-color: @bg-light;
+		&-btn {
+			padding: 0.5rem;
+		}	
 	}
-	}
-	 
+  .contacts {
+  	background: none;
+  	background-color: @bg-light;
+  	&-form {
+  		margin-top: 3rem;
+  	}
+  }
+  footer {
+  	text-align: center;
+  	 	position: relative;
+  }
+  .footer {
+  	&-contacts {
+  		margin: 2rem 0;
+  		p {
+  			margin-left: 15rem;
+  			display: block;
+        text-align: center;
+  		}
+  	}
+  	&-dev-logo {
+  		position: absolute;
+  		top: 83%;
+  		right: 40%;
 
+  	}
+  }
+}
+	
 @media (max-width: 767px) {
 	.main {
 		background-position: top left;
@@ -770,4 +870,39 @@ section {
 			min-height: 20rem;
 		}
 	}
+	.footer {
+		&-contacts {
+			margin: 2rem 0;
+			p {
+				margin-left: 16rem;
+	      text-align: center;
+			}
+		}
+		&-dev-logo {
+			position: absolute;
+			top: 83%;
+			right: 40%;
+
+		}
+	}
+	}
+
+@media (max-width: 540px) {
+	footer {
+			&-contacts {
+				margin: 2rem 0;
+				p {
+					margin-left: 13rem;
+		      text-align: center;
+				}
+			}
+			&-dev-logo {
+				position: absolute;
+				top: 83%;
+				right: 38%;
+
+			}
+		}
 }
+
+

@@ -1,0 +1,584 @@
+/* Fonts */
+@font-face {
+    font-family: 'Corbel';
+    src: url('Corbel-Bold.eot');
+    src: local('Corbel Bold'), local('Corbel-Bold'),
+        url('Corbel-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Corbel-Bold.woff2') format('woff2'),
+        url('Corbel-Bold.woff') format('woff'),
+        url('Corbel-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('Corbel-Italic.eot');
+    src: local('Corbel Italic'), local('Corbel-Italic'),
+        url('Corbel-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Corbel-Italic.woff2') format('woff2'),
+        url('Corbel-Italic.woff') format('woff'),
+        url('Corbel-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('Corbel-BoldItalic.eot');
+    src: local('Corbel Bold Italic'), local('Corbel-BoldItalic'),
+        url('Corbel-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Corbel-BoldItalic.woff2') format('woff2'),
+        url('Corbel-BoldItalic.woff') format('woff'),
+        url('Corbel-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('Corbel.eot');
+    src: local('Corbel'),
+        url('Corbel.eot?#iefix') format('embedded-opentype'),
+        url('Corbel.woff2') format('woff2'),
+        url('Corbel.woff') format('woff'),
+        url('Corbel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+	font-family: 'Corbel', sans-serif;
+	font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Colors */
+@dark: #262626;
+@light: #FECA00;
+
+/* Typography */
+section {
+	padding: 4rem 0;
+}
+
+.btn {
+	width: 10rem;
+	border-radius: 0.5rem;
+	margin-top: 0.7rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1rem;
+	color: @dark;
+	background: @light;
+	padding: 0.7 2rem;
+	margin-left: 1rem;
+	border: none;
+	outline: none;
+	
+}
+.btn:hover,
+.btn:focus {
+	color: #000;
+	background: @light;
+}
+.btn-submit {
+	width: 10rem;
+	border-radius: 0.5rem;
+	margin-top: 0.7rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1rem;
+	color: @dark;
+	background: @light;
+	padding: 0.5rem 0;
+	margin-left: 1rem;
+	border: none;
+	outline: none;
+}
+.btn-submit:active,
+.btn-submit:hover,
+.btn-submit:focus {
+	color: #000;
+	background: @light;
+} 
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2.5rem;
+	padding-bottom: 2rem;
+}
+
+.header {
+	
+	padding: 3rem 0;
+	font-weight: bold;
+	&-inner {
+		display: flex;
+	}
+	
+	&-logo {
+		margin-top: 0.7rem;
+		margin-left: 3rem;
+		margin-right: 2rem;
+	}
+
+}
+.nav {
+	a:hover,
+	a:active,
+	a:focus {
+		color: @light;
+	}
+
+	a:hover {
+		border-bottom: 1px solid @light;
+	}
+	flex-wrap: nowrap;
+	margin-top: 0.9rem;
+	&bar-brand {
+		color: @light;
+		padding: 0 0.1rem;
+		
+	}
+
+}
+
+.nav-toggle {
+	width: 35px;
+	padding: 10px 0;
+	font-size: 0;
+	color: transparent;
+	border: 0;
+	display: none;
+	background: none;
+	cursor: pointer;
+	position: absolute;
+	top: 4.1rem;
+	right: 3rem;
+	z-index: 1;
+}
+
+button:hover, 
+button:active, 
+button:focus {
+    outline: none;
+    
+    
+}
+
+
+.main {
+	position: relative;
+	background: url(../img/main4.jpg) center no-repeat;
+	height: 100vh;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	
+	&-title {
+		width: 95%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: auto;
+		transform: translate(-50%, -50%);
+		font-size: 3rem;
+		font-weight: bold;
+		line-height: 1.4;
+		span {
+			font-size: 2.2rem;
+		}
+	}
+	h4 {
+		font-family: Montserrat, sans-serif;
+		font-size: 23px;
+		position: absolute;
+		left: 20%;
+		bottom: 10%;
+	}
+	
+}
+
+.modal {
+	padding: 3rem 1.5rem;
+	color: #000;
+	text-transform: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*About*/
+.about {
+	background: #EDEDED;
+	&-content {
+		img {
+			margin-top: 1rem;
+			margin-bottom: 2.5rem;
+		}
+	}
+	&-text {
+		line-height: 1.3;
+		padding-left: 1rem;	
+	}
+}
+
+.advantage {
+	padding-top: 5rem;
+	background: #EDEDED;
+	height: 100vh;
+	&-item {
+		display: flex;
+		margin: 5rem 0;
+	}
+	&-title {
+		padding: 1rem 0;
+		padding-left: 30%;
+		font-weight: 700;
+		text-align: center;
+		background: #262626;
+		color: #fff;
+	}
+	&-images {
+		
+		position: relative;
+		left: 25%;
+		
+	}
+	&-first	{
+		z-index: 1;
+
+	}
+	&-second {
+		position: absolute;
+		top: -11rem;
+		left: 3rem;
+		z-index: 4;
+	}
+	&-text {
+		
+	}
+	&-scheme {
+		padding-left: 4rem;
+		margin-top: 3rem;
+	}
+	
+	&-paragraph:before {
+		content: "";
+		position: absolute;
+		margin-left: -4rem;
+		margin-top: 0.8rem;
+		width: 3rem;
+		height: 1rem;
+		background-color: @light;
+	}
+
+}
+.features {
+	&-title {
+		font-size: 4rem;
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.contacts {
+	font-family: 'Open Sans', sans-serif;
+	background: url(../img/contacts.png) center no-repeat;
+	background-size: cover;
+	height: 100vh;	
+	h2 {
+		color: #fff;
+	}
+	&-text {
+		margin-top: 4rem;
+		font-size: 1.7rem;
+		line-height: 1.6;
+		text-align: center;
+		color: #fff;
+
+		span {
+			display: block;
+		}
+		a {
+			color: #fff;
+			display: block;
+
+		}
+	}
+}
+
+@media (max-width: 1445px) {
+	.advantage {
+		&-first {
+			padding-right: 1rem;
+		}
+		&-second {
+			position: absolute;
+			    top: -13rem;
+			    left: 1rem;
+			    z-index: 4;
+		}
+		&-images {
+		
+		position: relative;
+		left: 5%;
+		
+		}
+		&-scheme {
+			margin-top: 2rem;
+		}
+		&-paragraph {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media (max-width: 1300px) {
+	
+	.nav {
+		display: block;
+		position: absolute;
+		margin: 5.5rem -3rem;
+		right: 5rem;
+		
+
+		&-toggle {
+			display: block;
+			top: 8rem;
+			right: 3.1rem;
+		}
+		&bar-brand {
+			display: block;
+			text-align: right;
+		line-height: 1.7;
+		}
+	}
+	.nav.active {
+		display: none;
+	}
+	.nav-toggle.active {
+		display: block;
+	}
+	.btn {
+		position: absolute;
+		margin-top: 1rem;
+		right: 3rem;
+		
+	}
+	.advantage {
+		&-first {
+			display: none;
+		}
+		&-second {
+			width: 300px;
+			position: absolute;
+			top: -12rem;
+			left: 0;
+			z-index: 4;
+		}
+		&-scheme {
+			width: 730px;
+			
+		}
+		&-images {
+		
+		position: relative;
+		left: 2%;
+		
+		}
+	}
+	
+} 
+
+
+@media (max-width: 991px) {
+	.header {
+		&-logo {
+			display: block;
+			position: absolute;
+			left: 13%;
+		}
+	}
+	.main {
+		&-title {
+			
+		}
+	}
+	.about {
+		&-content {
+
+		}
+	}
+	.advantage {
+		&-title {
+			padding-left: 5%;
+		}
+		&-second {
+			display: none;
+		}
+	}
+
+}
+
+@media (max-width: 767px) {
+	.header {
+		&-logo {
+			display: block;
+			position: absolute;
+			left: 10%;
+		}
+	}
+
+	.main {
+		&-title {
+			font-size: 2.5rem;
+			span {
+				font-size: 1.8rem;
+			}
+		}
+		h4 {
+			left: 8%;
+		}
+	}
+	.advantage {
+		&-scheme {
+			display: none;	
+			
+		}
+	}
+	.about {
+		&-content {
+			img {
+				margin-left: 5rem;
+			}	
+		}
+	}
+}
+
+
+
+@media (max-width: 645px) {
+
+	.main {
+		&-title {
+			font-size: 2.2rem;
+			span {
+				font-size: 1.5rem;
+			}
+		}
+		h4 {
+			font-size: 21px;
+			left: 8%;
+		}
+	}
+	.advantage {
+		&-title {
+			padding-left: 0%;	
+		}
+	}
+	.about {
+		&-content {
+			img {
+				display: block;
+				margin: 1rem auto;
+				width: 280px;
+				height: 370px;		
+			}	
+		}
+	}
+}
+@media (max-width: 480px) {
+	.main {
+		&-title {
+			top: 57%;
+		}
+	}
+	.btn {
+		top: 6.5rem;
+		right: 3rem;
+	}
+	.nav {
+		margin-top: 9rem;
+	}
+	.nav-toggle {
+		top: 11rem;
+	}
+	.main {
+		&-title {
+			font-size: 2.1rem;
+			span {
+				font-size: 1.3rem;
+			}
+		}
+		
+	}
+}
+@media (max-width: 440px) {
+	.main {
+		&-title {
+			font-size: 2.1rem;
+			span {
+				font-size: 1.3rem;
+			}
+		}
+		h4 {
+			font-size: 21px;
+			left: 8%;
+		}
+	}
+	.about {
+		&-content {
+			img {
+				display: block;
+				margin: 1rem auto;
+				width: 250px;
+				height: 340px;		
+			}	
+		}
+	}
+	.advantage {
+		&-paragraph:before {
+		content: "";
+		position: absolute;
+		margin-left: -3.5rem;
+		margin-top: 0.8rem;
+		width: 2.5rem;
+		height: 1rem;
+		background-color: @light;
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	.header {
+		img {
+			width: 180px;
+		}
+	}
+	
+	
+	.main {
+		&-title {
+			font-size: 1.8rem;
+			span {
+				font-size: 1.2rem;
+			}
+		}
+		h4 {
+			font-size: 21px;
+			left: 8%;
+		}
+	}
+}

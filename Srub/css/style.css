@@ -339,7 +339,7 @@ h2 {
     display: none;
   }
   .main .btn {
-    bottom: 0;
+    bottom: -60px;
   }
   .services p {
     width: auto;
